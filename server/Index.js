@@ -1,5 +1,5 @@
 const Express = require("express");
-const{jobs,user}=require("./MongoDB/mongo");
+const {jobs, user} = require("./Mongodb/mongo");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 const app = Express();
