@@ -11,7 +11,7 @@ app.use(cors());
 
 const port = process.env.PORT || 8000;
 
-app.get("/", async (req, res) => {
+app.get("/", cors(), async (req, res) => {
   const allJobs = await jobs.find({});
   res.json(allJobs);
 });
