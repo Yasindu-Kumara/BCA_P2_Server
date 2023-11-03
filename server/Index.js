@@ -26,6 +26,17 @@ app.get("/adminpanel", async (req, res) => {
   }
 });
 
+
+// app.get("/adminpanel", async (req, res) => {
+//   try {
+//     const alljob = await jobs.find({});
+//     res.json(alljob);
+//   } catch (error) {
+//     console.log(error);
+//     res.status(500).json({ error: "Internal Server Error" });
+//   }
+// });
+
 app.post("/adminpanel", async (req, res) => {
   const {
     Title,
